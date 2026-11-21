@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি) | অফিশিয়াল ওয়েবসাইট</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- টপ বার -->
+  <div class="top-bar">
+    <div class="container top-bar-flex">
+      <span>ঐক্য • শিক্ষা • অধিকার — পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি)</span>
+      <div class="top-actions">
+        <a href="#join">সদস্য আবেদন</a>
+        <button id="openAdminBtn" class="admin-trigger">অ্যাডমিন প্যানেল</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- নেভিগেশন বার -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#home" class="brand">
+        <img src="logo.jpg" alt="পিসিসিপি লোগো" class="brand-logo" />
+        <div>
+          <span class="brand-title">পার্বত্য চট্টগ্রাম ছাত্র পরিষদ</span>
+          <span class="brand-sub">কেন্দ্রীয় ও জেলা পোর্টাল</span>
+        </div>
+      </a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <nav id="navMenu">
+        <a href="#home">হোম</a>
+        <a href="#feature">Feature</a>
+        <a href="#committee">কমিটি</a>
+        <a href="#press">প্রেস বিজ্ঞপ্তি</a>
+        <a href="#programs">প্রোগ্রাম</a>
+        <a href="#genocide">গণহত্যা</a>
+        <a href="#human-rights">মানবাধিকার পরিস্থিতি</a>
+        <a href="#chtic">CHTIC</a>
+        <a href="#cht-update">CHT Update</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CHT Update টিকার -->
+  <div class="ticker-wrap">
+    <div class="container ticker-flex">
+      <span class="ticker-label">CHT Update</span>
+      <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+        পার্বত্য চট্টগ্রামের শিক্ষার মানোন্নয়ন, সাম্প্রদায়িক সম্প্রীতি রক্ষা এবং শিক্ষার্থীদের ন্যায্য অধিকার বাস্তবায়নে পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি)-এর ধারাবাহিক কর্মসূচি চলমান।
+      </marquee>
+    </div>
+  </div>
+
+  <!-- হিরো ও লক্ষ্য-উদ্দেশ্য -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="pill-badge">সাংবিধানিক অধিকার ও ছাত্রকল্যাণ</span>
+        <h1>পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি)</h1>
+        <p>পার্বত্য চট্টগ্রামের রাঙামাটি, খাগড়াছড়ি ও বান্দরবান জেলার ছাত্রসমাজের মেধা বিকাশ, উচ্চশিক্ষায় বৈষম্য দূরীকরণ, অখণ্ডতা রক্ষা এবং সকল জনগোষ্ঠীর মধ্যে শান্তিপূর্ণ সহাবস্থান নিশ্চিত করার লক্ষ্যে গঠিত একটি প্রগতিশীল ছাত্র সংগঠন।</p>
+        <div class="hero-btns">
+          <a href="#join" class="btn btn-gold">সদস্য হওয়ার আবেদন</a>
+          <a href="#human-rights" class="btn btn-outline">মানবাধিকার রিপোর্ট (PDF)</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>আমাদের মূল লক্ষ্য ও উদ্দেশ্য</h3>
+        <ul class="mission-list">
+          <li><strong>১. শিক্ষার অধিকার ও মেধা বিকাশ:</strong> দুর্গম পাহাড়ি অঞ্চলের শিক্ষার্থীদের উচ্চশিক্ষা, আবাসন ও বৃত্তির সুযোগ নিশ্চিত করা।</li>
+          <li><strong>২. বৈষম্যহীন পার্বত্য চট্টগ্রাম:</strong> কোটা ও ভর্তি ক্ষেত্রে সকল সম্প্রদায়ের শিক্ষার্থীদের ন্যায্য হিস্যা আদায়।</li>
+          <li><strong>৩. সাম্প্রদায়িক সম্প্রীতি ও সার্বভৌমত্ব:</strong> পাহাড়ে শান্তি, শৃঙ্খলা ও বাংলাদেশের সার্বভৌমত্ব রক্ষায় ছাত্রসমাজকে ঐক্যবদ্ধ করা।</li>
+          <li><strong>৪. মানবাধিকার ও নিরাপত্তা:</strong> পার্বত্য অঞ্চলে সন্ত্রাস, চাঁদাবাজি ও মানবাধিকার লঙ্ঘনের বিরুদ্ধে জনমত গঠন।</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature কর্নার -->
+  <section id="feature" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Feature — পার্বত্য চট্টগ্রাম বিশ্লেষণ ও ফিচার</h2>
+        <p>পার্বত্য চট্টগ্রামের ইতিহাস, ভূ-রাজনীতি, শিক্ষা ও উন্নয়ন বিষয়ক বিশেষ লেখালেখি ও আলোকচিত্র</p>
+      </div>
+      <div id="featureGrid" class="grid-3"></div>
+    </div>
+  </section>
+
+  <!-- CHT Update কর্নার -->
+  <section id="cht-update" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2>CHT Update — সমসাময়িক সংবাদ</h2>
+        <p>তিন পার্বত্য জেলার সাম্প্রতিক ঘটনাবলি ও ছাত্রসমাজের অবস্থান</p>
+      </div>
+      <div id="updateGrid" class="grid-3"></div>
+    </div>
+  </section>
+
+  <!-- কমিটি কর্নার -->
+  <section id="committee" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>সাংগঠনিক কমিটিসমূহ</h2>
+        <p>কেন্দ্রীয়, জেলা, উপজেলা, পৌর ও সদর উপজেলা কমিটির দায়িত্বশীল নেতৃবৃন্দ</p>
+      </div>
+
+      <div class="tabs" id="committeeTabs">
+        <button class="tab-btn active" data-filter="central">কেন্দ্রীয় কমিটি</button>
+        <button class="tab-btn" data-filter="rangamati">রাঙামাটি জেলা</button>
+        <button class="tab-btn" data-filter="khagrachhari">খাগড়াছড়ি জেলা</button>
+        <button class="tab-btn" data-filter="bandarban">বান্দরবান জেলা</button>
+        <button class="tab-btn" data-filter="upazila">উপজেলা কমিটি</button>
+        <button class="tab-btn" data-filter="pouro">পৌর কমিটি</button>
+        <button class="tab-btn" data-filter="sadar">সদর উপজেলা কমিটি</button>
+      </div>
+
+      <div id="committeeContainer" class="grid-4"></div>
+    </div>
+  </section>
+
+  <!-- প্রেস বিজ্ঞপ্তি কর্নার -->
+  <section id="press" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2>প্রেস বিজ্ঞপ্তি</h2>
+        <p>সংগঠনের দাপ্তরিক বিবৃতি ও সংবাদ বিজ্ঞপ্তিসমূহ</p>
+      </div>
+      <div id="pressList" class="press-stack"></div>
+    </div>
+  </section>
+
+  <!-- প্রোগ্রাম গ্যালারি কর্নার -->
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>প্রোগ্রাম ও কর্মসূচি গ্যালারি</h2>
+        <p>মাঠপর্যায়ের সভা, সমাবেশ, মানববন্ধন ও ছাত্রকল্যাণমূলক কার্যক্রমের চিত্র ও বিবরণ</p>
+      </div>
+      <div id="programGrid" class="grid-3"></div>
+    </div>
+  </section>
+
+  <!-- গণহত্যা কর্নার -->
+  <section id="genocide" class="section bg-dark-red">
+    <div class="container">
+      <div class="section-header light-header">
+        <h2>গণহত্যা আর্কাইভ — পার্বত্য চট্টগ্রামে সন্ত্রাসী সংগঠনের বর্বরতা</h2>
+        <p>পার্বত্য চট্টগ্রামে সশস্ত্র সন্ত্রাসী সংগঠনগুলোর মাধ্যমে সংঘটিত ঐতিহাসিক গণহত্যার তথ্যচিত্র ও প্রামাণ্য বিবরণ</p>
+      </div>
+      <div id="genocideGrid" class="grid-2"></div>
+    </div>
+  </section>
+
+  <!-- মানবাধিকার পরিস্থিতি কর্নার -->
+  <section id="human-rights" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>মানবাধিকার পরিস্থিতি — বার্ষিক মানবাধিকার রিপোর্ট (PDF)</h2>
+        <p>পার্বত্য চট্টগ্রামে অপহরণ, চাঁদাবাজি, হত্যা ও মানবাধিকার লঙ্ঘনের বার্ষিক প্রামাণ্য প্রতিবেদন</p>
+      </div>
+      <div class="hr-layout">
+        <div class="hr-list" id="hrReportList"></div>
+        <div class="hr-viewer">
+          <div class="viewer-header">
+            <span id="activePdfTitle">বার্ষিক মানবাধিকার রিপোর্ট ২০২৫–২০২৬</span>
+            <a id="downloadPdfBtn" href="reports/hr-report-2026.pdf" download class="btn btn-gold btn-sm">PDF ডাউনলোড করুন</a>
+          </div>
+          <iframe id="pdfFrame" src="reports/hr-report-2026.pdf" title="মানবাধিকার রিপোর্ট PDF"></iframe>
+          <p class="pdf-note">* আপনার প্রজেক্টের <code>reports/</code> ফোল্ডারে পিডিএফ ফাইল রাখলে এখানে সরাসরি পড়া ও ডাউনলোড করা যাবে।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHTIC তথ্য কেন্দ্র -->
+  <section id="chtic" class="section bg-soft">
+    <div class="container">
+      <div class="section-header">
+        <h2>CHTIC — পার্বত্য চট্টগ্রাম তথ্য কেন্দ্র</h2>
+        <p>তিন পার্বত্য জেলার জনসংখ্যা, জনমিতি (বাঙালি ও ক্ষুদ্র নৃ-গোষ্ঠী) এবং স্কুল ও কলেজের তুলনামূলক পরিসংখ্যান</p>
+      </div>
+      <div class="charts-grid">
+        <div class="chart-card">
+          <h3>জেলাভিত্তিক মোট জনসংখ্যা (আদমশুমারি তথ্য)</h3>
+          <canvas id="populationChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <h3>জেলাভিত্তিক জনমিতি তুলনা (%)</h3>
+          <canvas id="demographyChart"></canvas>
+        </div>
+        <div class="chart-card full-span">
+          <h3>জেলাভিত্তিক শিক্ষাপ্রতিষ্ঠানের সংখ্যা (প্রাথমিক, মাধ্যমিক স্কুল ও কলেজ)</h3>
+          <canvas id="educationChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- সদস্য আবেদন ফরম -->
+  <section id="join" class="section">
+    <div class="container join-grid">
+      <div>
+        <h2>সদস্য হওয়ার আবেদন ফরম</h2>
+        <p>পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি)-এর আদর্শ ও লক্ষ্যের সাথে একমত হয়ে সাংগঠনিক কার্যক্রমে যুক্ত হতে নিচের ফরমটি পূরণ করুন।</p>
+        <div class="info-box">
+          <h4>যোগাযোগ ও দপ্তর</h4>
+          <p>কেন্দ্রীয় ও জেলা দপ্তর: রাঙামাটি • খাগড়াছড়ি • বান্দরবান</p>
+          <p>ইমেইল: info@pccp-cht.org</p>
+        </div>
+      </div>
+      <form id="memberForm" class="card-form">
+        <input type="text" name="name" placeholder="পূর্ণ নাম (বাংলায়)" required />
+        <input type="text" name="institution" placeholder="শিক্ষাপ্রতিষ্ঠানের নাম ও শ্রেণি/বিভাগ" required />
+        <select name="district" required>
+          <option value="">জেলা নির্বাচন করুন</option>
+          <option value="রাঙামাটি">রাঙামাটি</option>
+          <option value="খাগড়াছড়ি">খাগড়াছড়ি</option>
+          <option value="বান্দরবান">বান্দরবান</option>
+          <option value="ঢাকা/চট্টগ্রাম মহানগর">ঢাকা / চট্টগ্রাম মহানগর শাখা</option>
+        </select>
+        <input type="text" name="upazila" placeholder="উপজেলা / পৌরসভার নাম" required />
+        <input type="tel" name="phone" placeholder="মোবাইল নম্বর (WhatsApp)" required />
+        <button type="submit" class="btn btn-green">আবেদন জমা দিন</button>
+        <p id="formStatus" class="status-text"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- অ্যাডমিন প্যানেল মডাল -->
+  <div id="adminModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>পিসিসিপি অ্যাডমিন ড্যাশবোর্ড (কনটেন্ট পাবলিশার)</h3>
+        <button id="closeAdminBtn" class="close-btn">✕</button>
+      </div>
+      <div id="adminLoginBox">
+        <p>নতুন প্রেস বিজ্ঞপ্তি, Feature, CHT Update বা প্রোগ্রাম যুক্ত করতে পাসওয়ার্ড দিন (ডেমো পাসওয়ার্ড: <code>pccp2026</code>):</p>
+        <input type="password" id="adminPassInput" placeholder="পাসওয়ার্ড লিখুন" />
+        <button id="adminLoginSubmit" class="btn btn-green">প্রবেশ করুন</button>
+      </div>
+      <div id="adminDashboard" style="display:none;">
+        <form id="publishForm" class="card-form">
+          <label>কোন কর্নারে প্রকাশ করবেন?</label>
+          <select id="postCategory" required>
+            <option value="press">প্রেস বিজ্ঞপ্তি</option>
+            <option value="feature">Feature (বিশেষ লেখা)</option>
+            <option value="update">CHT Update (সমসাময়িক নিউজ)</option>
+            <option value="program">প্রোগ্রাম গ্যালারি</option>
+          </select>
+          <input type="text" id="postTitle" placeholder="শিরোনাম লিখুন" required />
+          <input type="text" id="postDate" placeholder="তারিখ (যেমন: ২১ নভেম্বর ২০২৬)" required />
+          <input type="url" id="postImage" placeholder="ছবির লিংক (ঐচ্ছিক)" />
+          <textarea id="postBody" rows="4" placeholder="বিস্তারিত বিবরণ লিখুন..." required></textarea>
+          <button type="submit" class="btn btn-gold">ওয়েবসাইটে প্রকাশ করুন</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- বিস্তারিত পড়ার মডাল -->
+  <div id="readerModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="readerTitle"></h3>
+        <button id="closeReaderBtn" class="close-btn">✕</button>
+      </div>
+      <p id="readerMeta" class="meta-date"></p>
+      <img id="readerImg" src="" alt="" style="width:100%; max-height:320px; object-fit:cover; border-radius:8px; margin:12px 0; display:none;" />
+      <div id="readerContent" style="white-space:pre-line; line-height:1.8;"></div>
+    </div>
+  </div>
+
+  <!-- ফুটার -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h4>পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি)</h4>
+        <p>পার্বত্য চট্টগ্রামের ছাত্রসমাজের অধিকার, শিক্ষা ও সম্প্রীতির কণ্ঠস্বর।</p>
+      </div>
+      <div>
+        <h4>দ্রুত লিংক</h4>
+        <a href="#committee">কমিটি সমূহ</a> •
+        <a href="#press">প্রেস বিজ্ঞপ্তি</a> •
+        <a href="#human-rights">মানবাধিকার রিপোর্ট</a> •
+        <a href="#chtic">CHTIC তথ্য কেন্দ্র</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © ২০২৬ পার্বত্য চট্টগ্রাম ছাত্র পরিষদ (পিসিসিপি) — সর্বস্বত্ব সংরক্ষিত।
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
